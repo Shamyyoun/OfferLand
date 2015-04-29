@@ -1,0 +1,65 @@
+<resources>
+    <!-- Form Widget -->
+    <style name="FormWidget" parent="android:Widget">
+        <item name="android:textSize">@dimen/form_com_text_size</item>
+        <item name="android:paddingLeft">@dimen/form_com_lr_padding</item>
+        <item name="android:paddingRight">@dimen/form_com_lr_padding</item>
+        <item name="android:paddingTop">@dimen/form_com_tb_padding</item>
+        <item name="android:paddingBottom">@dimen/form_com_tb_padding</item>
+        <item name="android:layout_marginTop">@dimen/form_com_margin</item>
+        <item name="android:layout_marginBottom">@dimen/form_com_margin</item>
+        <item name="android:layout_marginLeft">@dimen/form_com_margin</item>
+        <item name="android:layout_marginRight">@dimen/form_com_margin</item>
+    </style>
+
+    <!-- Form Text Field -->
+    <style name="FormTextField" parent="FormWidget">
+        <item name="colorAccent">@color/red</item>
+        <item name="android:background">@drawable/form_text_field</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textColor">@color/dark_red</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!-- Form Button -->
+    <style name="FormButton" parent="FormWidget">
+        <item name="android:background">@drawable/form_button</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Button -->
+    <style name="Button" parent="FormButton">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:layout_marginLeft">@dimen/com_margin_lr</item>
+        <item name="android:layout_marginRight">@dimen/com_margin_lr</item>
+        <item name="android:layout_marginTop">@dimen/com_margin_tb</item>
+        <item name="android:layout_marginBottom">@dimen/com_margin_tb</item>
+    </style>
+
+    <!-- Check Box -->
+    <style name="CheckBox">
+        <item name="android:textSize">@dimen/check_box_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- ActionBar Icon -->
+    <style name="ActionBarIcon">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:paddingLeft">@dimen/actionbar_icon_padding</item>
+        <item name="android:paddingRight">@dimen/actionbar_icon_padding</item>
+        <item name="android:background">@drawable/clickable_item</item>
+    </style>
+
+    <!-- Header Text -->
+    <style name="HeaderText">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/header_text_size</item>
+        <item name="android:layout_margin">@dimen/header_text_margin</item>
+    </style>
+
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Offer Land</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="email">Email</string>
+    <string name="Password">Password</string>
+    <string name="remember_me">Remember me?</string>
+    <string name="login">Login</string>
+    <string name="what_products_you_interest_in">What products you interest in?</string>
+    <string name="confirm">Confirm</string>
+    <string name="notifications">Notifications</string>
+    <string name="my_interest_list">My Interest List</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="offers_map">Offers Map</string>
+    <string name="logout">Logout</string>
+</resources>

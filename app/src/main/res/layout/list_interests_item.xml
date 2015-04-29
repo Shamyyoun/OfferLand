@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/listview_lr_spacing"
+    android:paddingRight="@dimen/listview_lr_spacing"
+    android:paddingTop="@dimen/listview_tb_spacing"
+    android:paddingBottom="@dimen/listview_tb_spacing"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/food_icon"
+        android:layout_width="@dimen/interests_icon_dimen"
+        android:layout_height="@dimen/interests_icon_dimen"
+        android:id="@+id/imageView2" />
+
+    <TextView
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_normal"
+        android:layout_marginLeft="@dimen/listview_lr_spacing"
+        android:layout_marginRight="@dimen/listview_lr_spacing"
+        android:text="Food"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox" />
+</LinearLayout>
