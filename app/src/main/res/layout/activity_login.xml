@@ -1,58 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/red"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
 
     <views.ResizableImageView
-        android:scaleType="fitCenter"
-        android:layout_gravity="center_horizontal|top"
-        android:src="@drawable/form_logo"
         android:layout_width="220dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:scaleType="fitCenter"
+        android:src="@drawable/form_logo" />
 
     <FrameLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <LinearLayout
-            android:paddingLeft="@dimen/screen_horizontal_margin"
-            android:paddingRight="@dimen/screen_horizontal_margin"
+            android:id="@+id/layout_login"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:orientation="vertical"
-            android:gravity="center">
+            android:paddingLeft="@dimen/screen_lr_spacing"
+            android:paddingRight="@dimen/screen_lr_spacing">
 
             <EditText
                 android:id="@+id/text_email"
                 style="@style/FormTextField"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress" />
 
             <EditText
                 android:id="@+id/text_password"
                 style="@style/FormTextField"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
 
             <CheckBox
+                android:id="@+id/check_rememberMe"
                 style="@style/CheckBox"
-                android:checked="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/remember_me"
-                android:id="@+id/check_rememberMe" />
+                android:checked="true"
+                android:text="@string/remember_me" />
 
             <Button
                 android:id="@+id/button_login"
-                android:text="@string/login"
-                style="@style/FormButton"
+                style="@style/SubmitButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/login" />
 
         </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:padding="@dimen/screen_tb_spacing"
+            android:text="@string/signup_now"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/form_com_text_size" />
 
     </FrameLayout>
 </LinearLayout>

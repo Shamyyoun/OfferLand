@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/offer_store2_image_height"
+    android:padding="1dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/offer" />
+
+    <ImageView
+        android:id="@+id/image_offerImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/text_desc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offer_style2_main_text_height"
+        android:layout_gravity="bottom"
+        android:background="@color/trans_black"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="@integer/offer_style2_desc_max_lines"
+        android:padding="@dimen/offer_style2_main_text_padding"
+        android:text="offerss offer offer offer offer offer offer offer offer offer offer offer offer offer offer "
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/offer_style2_main_text_size" />
+
+    <views.RoundedImageView
+        android:layout_width="@dimen/offer_style2_store_image_dimen"
+        android:layout_height="@dimen/offer_style2_store_image_dimen"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/offer_style2_store_image_margin"
+        android:src="@drawable/store" />
+
+    <views.RoundedImageView
+        android:id="@+id/image_storePhoto"
+        android:layout_width="@dimen/offer_style2_store_image_dimen"
+        android:layout_height="@dimen/offer_style2_store_image_dimen"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/offer_style2_store_image_margin" />
+
+</FrameLayout>

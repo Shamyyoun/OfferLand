@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/primary"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/offer_land_header2" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/view_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/screen_tb_spacing"
+                    android:paddingLeft="@dimen/screen_lr_spacing"
+                    android:paddingRight="@dimen/screen_lr_spacing"
+                    android:paddingTop="@dimen/screen_tb_spacing">
+
+                    <EditText
+                        android:id="@+id/text_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:hint="Title"
+                        android:maxLines="1"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_normal" />
+
+                    <EditText
+                        android:id="@+id/text_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:hint="Description"
+                        android:minHeight="@dimen/large_text_field_min_height"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_normal" />
+
+                    <EditText
+                        android:id="@+id/text_budget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ems="10"
+                        android:hint="Budget"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_normal" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+            <Button
+                android:id="@+id/button_request"
+                style="@style/LargeSubmitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/light_submit_button"
+                android:text="@string/request" />
+
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

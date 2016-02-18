@@ -14,24 +14,30 @@
 
     <!-- Form Text Field -->
     <style name="FormTextField" parent="FormWidget">
-        <item name="colorAccent">@color/red</item>
+        <item name="colorAccent">@color/primary</item>
         <item name="android:background">@drawable/form_text_field</item>
         <item name="android:singleLine">true</item>
         <item name="android:maxLines">1</item>
         <item name="android:scrollHorizontally">true</item>
-        <item name="android:textColor">@color/dark_red</item>
+        <item name="android:textColor">@color/primary_dark</item>
         <item name="android:gravity">left</item>
     </style>
 
-    <!-- Form Button -->
-    <style name="FormButton" parent="FormWidget">
-        <item name="android:background">@drawable/form_button</item>
+    <!-- Submit Button -->
+    <style name="SubmitButton" parent="FormWidget">
+        <item name="android:background">@drawable/dark_submit_button</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:gravity">center</item>
     </style>
 
+    <!-- Large Submit Button -->
+    <style name="LargeSubmitButton" parent="SubmitButton">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
     <!-- Button -->
-    <style name="Button" parent="FormButton">
+    <style name="Button" parent="SubmitButton">
         <item name="android:background">@drawable/button</item>
         <item name="android:layout_marginLeft">@dimen/com_margin_lr</item>
         <item name="android:layout_marginRight">@dimen/com_margin_lr</item>
@@ -57,7 +63,7 @@
     <!-- Header Text -->
     <style name="HeaderText">
         <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/red</item>
+        <item name="android:textColor">@color/primary</item>
         <item name="android:textSize">@dimen/header_text_size</item>
         <item name="android:layout_margin">@dimen/header_text_margin</item>
     </style>

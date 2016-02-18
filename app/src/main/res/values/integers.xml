@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="offer_style1_desc_max_lines">2</integer>
+    <integer name="offer_style2_desc_max_lines">3</integer>
+
+</resources>

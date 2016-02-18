@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/primary"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/your_interest_list_header" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/view_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/offer_store2_image_height"
+                        android:orientation="vertical"
+                        android:padding="1dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/offer" />
+
+                        <ImageView
+                            android:id="@+id/image_offer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/text_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/offer_style2_main_text_height"
+                            android:layout_gravity="bottom"
+                            android:background="@color/trans_black"
+                            android:gravity="center"
+                            android:padding="@dimen/offer_style2_main_text_padding"
+                            android:text="offer "
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/text_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="text text text"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="20sp" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/discount_bg" />
+
+                        <TextView
+                            android:id="@+id/text_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:text="Discount: 50%"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/button_viewOnMap"
+                style="@style/LargeSubmitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/light_submit_button"
+                android:text="View On Map" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

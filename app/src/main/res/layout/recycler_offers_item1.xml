@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/screen_tb_spacing"
+    android:background="@drawable/offer_style1_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/offer_style1_spacing">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/offer_style1_store_image_dimen"
+            android:layout_height="@dimen/offer_style1_store_image_dimen">
+
+            <views.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/store" />
+
+            <views.RoundedImageView
+                android:id="@+id/image_storePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_storeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/offer_style1_store_name_margin"
+            android:text="Carrefour"
+            android:textColor="@color/offer_style1_main_text"
+            android:textSize="@dimen/offer_style1_main_text_size" />
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="20:11"
+            android:textColor="@color/offer_style1_time"
+            android:textSize="@dimen/offer_style1_time_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/offer_style1_spacing"
+        android:ellipsize="end"
+        android:maxLines="@integer/offer_style1_desc_max_lines"
+        android:textColor="@color/offer_style1_main_text"
+        android:textSize="@dimen/offer_style1_main_text_size" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offer_style1_image_height"
+        android:layout_marginTop="@dimen/offer_style1_spacing">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/offer" />
+
+        <ImageView
+            android:id="@+id/image_offerImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+    </FrameLayout>
+
+</LinearLayout>

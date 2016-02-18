@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="red">#FE3E27</color>
-    <color name="dark_red">#CE2512</color>
-    <color name="light_red">#FB867B</color>
+    <color name="primary">#FE3E27</color>
+    <color name="primary_dark">#CE2512</color>
+    <color name="hint">#FB867B</color>
     <color name="trans_black">#88000000</color>
+    <color name="dark_gray">#212121</color>
+    <color name="offer_style1_bg_normal">#F4F4F4</color>
+    <color name="offer_style1_bg_pressed">#E0E0E0</color>
+    <color name="offer_style1_time">#A8A8A8</color>
+    <color name="offer_style1_main_text">#414141</color>
+    <color name="msg_view_main">#ff515151</color>
+    <color name="msg_view_sec">#ff707070</color>
+    <color name="submit_button_normal">#CE2E1B</color>
+    <color name="submit_button_pressed">#A01D0E</color>
 </resources>

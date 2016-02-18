@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/menu_drawer_profile_image_dimen"
+        android:layout_height="@dimen/menu_drawer_profile_image_dimen"
+        android:layout_marginTop="@dimen/menu_drawer_tb_spacing">
+
+        <views.RoundedImageView
+            android:id="@+id/image_defProfilePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/def_profile_photo" />
+
+        <views.RoundedImageView
+            android:id="@+id/image_profilePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/menu_drawer_tb_spacing"
+        android:text="Full Name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_normal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_menuDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/menu_drawer_tb_spacing"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
