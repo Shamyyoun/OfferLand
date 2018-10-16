@@ -29,7 +29,7 @@ public class SplashActivity extends ActionBarActivity {
             }
         };
 
-        // check if there is an saved active user
+        // check if there is a saved active user
         User user = AppController.getInstance(getApplicationContext()).getActiveUser();
         if (user == null) {
             // start splash

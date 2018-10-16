@@ -90,9 +90,6 @@ public class StoreOffersActivity extends ProgressActivity {
                 return;
             }
 
-            // try to get location
-            LocationFinder locationFinder = new LocationFinder(activity);
-
             showProgress();
         }
 

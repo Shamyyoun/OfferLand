@@ -94,9 +94,6 @@ public class CategoryOffersFragment extends ProgressFragment {
                 return;
             }
 
-            // try to get location
-            LocationFinder locationFinder = new LocationFinder(activity);
-
             showProgress();
         }
 

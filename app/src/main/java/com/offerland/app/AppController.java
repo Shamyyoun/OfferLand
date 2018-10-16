@@ -38,14 +38,6 @@ public class AppController extends Application {
     }
 
     /**
-     * overriden method
-     */
-    @Override
-    public void onCreate() {
-        super.onCreate();
-    }
-
-    /**
      * method, used to getAll active user from runtime or from SP
      */
     public User getActiveUser() {

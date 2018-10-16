@@ -2,4 +2,4 @@
 <translate xmlns:android="http://schemas.android.com/apk/res/android"
     android:duration="400"
     android:fromYDelta="-100%"
-    android:toYDelta="0" /><!-- From: file:/E:/Android/AndroidStudioProjects/OfferLand/app_msg/res/anim/slide_in.xml -->
+    android:toYDelta="0" />
